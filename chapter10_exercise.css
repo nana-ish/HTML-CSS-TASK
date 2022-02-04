@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #ff9a4b;
+}
+
+main {
+  width: 960px;
+  margin: 50px auto;
+  display: flex;
+}
+
+.contents_box {
+  position: relative;
+  width: 300px;
+  margin: 50px auto;
+  background-color: #EEEEEE;
+}
+.contents_number {
+  position: absolute;
+  top:0;
+  left: 0;
+  background-color: #ff9a4b;
+  color:#fff;
+}
+.contents_title{
+  margin-bottom:5px;
+}
+.contents_image_1{
+  height: 150px;
+  background-image: url(img_exercise/flow01.png);
+  background-size: cover;
+  background-position: bottom;
+  margin:10px 10px 15px 10px;
+}
+.contents_image_2{
+  height: 150px;
+  background-image: url(img_exercise/flow02.png);
+  background-size: cover;
+  background-position: bottom;
+  margin:10px 10px 15px 10px;
+}
+.contents_image_3{
+  height: 150px;
+  background-image: url(img_exercise/flow03.png);
+  background-size: cover;
+  background-position: bottom;
+  margin:10px 10px 15px 10px;
+}
+
+footer {
+  width: 100%; /* 横幅 */
+  height: 50px; /* 高さ */
+  text-align: center;
+  line-height: 120px;
+  background-color: #aaaaaa;
+}
