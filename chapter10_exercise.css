@@ -20,45 +20,81 @@ main {
 .contents_box {
   position: relative;
   width: 300px;
-  margin: 50px auto;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
+  margin-right: 30px;
+  padding: 10px;
 }
+.contents_box:nth-child(3) {
+  margin-right: 0;
+}
+
 .contents_number {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   background-color: #ff9a4b;
-  color:#fff;
+  color: #fff;
 }
-.contents_title{
-  margin-bottom:5px;
+.contents_title {
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
-.contents_image_1{
+.contents_image_1 {
   height: 150px;
   background-image: url(img_exercise/flow01.png);
   background-size: cover;
   background-position: bottom;
-  margin:10px 10px 15px 10px;
 }
-.contents_image_2{
+.contents_image_2 {
   height: 150px;
   background-image: url(img_exercise/flow02.png);
   background-size: cover;
   background-position: bottom;
-  margin:10px 10px 15px 10px;
 }
-.contents_image_3{
+.contents_image_3 {
   height: 150px;
   background-image: url(img_exercise/flow03.png);
   background-size: cover;
   background-position: bottom;
-  margin:10px 10px 15px 10px;
 }
 
 footer {
   width: 100%; /* 横幅 */
   height: 50px; /* 高さ */
   text-align: center;
-  line-height: 120px;
   background-color: #aaaaaa;
+}
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+  main {
+    width: 90%;
+    display: block;
+    margin: 0px auto;
+  }
+  .contents_box:nth-child(1) {
+    margin: 50px auto 20px;
+  }
+  .contents_box:nth-child(2) {
+    margin: 20px auto 20px;
+  }
+  .contents_box:nth-child(3) {
+    margin: 20px auto 50px;
+  }
+  footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  header {
+    width: 100%;
+  }
+  main {
+    width: 90%;
+  }
+  footer {
+    width: 100%;
+  }
 }
