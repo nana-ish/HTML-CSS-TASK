@@ -24,7 +24,8 @@ main {
   margin-right: 30px;
   padding: 10px;
 }
-.contents_box:nth-child(3) {
+
+.contents_box:last-child {
   margin-right: 0;
 }
 
@@ -35,22 +36,26 @@ main {
   background-color: #ff9a4b;
   color: #fff;
 }
+
 .contents_title {
   margin-top: 15px;
   margin-bottom: 5px;
 }
+
 .contents_image_1 {
   height: 150px;
   background-image: url(img_exercise/flow01.png);
   background-size: cover;
   background-position: bottom;
 }
+
 .contents_image_2 {
   height: 150px;
   background-image: url(img_exercise/flow02.png);
   background-size: cover;
   background-position: bottom;
 }
+
 .contents_image_3 {
   height: 150px;
   background-image: url(img_exercise/flow03.png);
@@ -64,24 +69,27 @@ footer {
   text-align: center;
   background-color: #aaaaaa;
 }
+
 @media screen and (max-width: 768px) {
   header {
     width: 100%;
+    margin-bottom: 50px;
   }
+
   main {
-    width: 90%;
+    width: 100%;
     display: block;
-    margin: 0px auto;
   }
-  .contents_box:nth-child(1) {
-    margin: 50px auto 20px;
+
+  .contents_box {
+    width: 90%;
+    margin: 0 auto 20px;
   }
-  .contents_box:nth-child(2) {
-    margin: 20px auto 20px;
+
+  .contents_box:last-child {
+    margin-right: 20px;
   }
-  .contents_box:nth-child(3) {
-    margin: 20px auto 50px;
-  }
+
   footer {
     width: 100%;
   }
@@ -91,9 +99,11 @@ footer {
   header {
     width: 100%;
   }
+
   main {
     width: 90%;
   }
+
   footer {
     width: 100%;
   }
