@@ -94,17 +94,3 @@ footer {
     width: 100%;
   }
 }
-
-@media screen and (max-width: 960px) {
-  header {
-    width: 100%;
-  }
-
-  main {
-    width: 90%;
-  }
-
-  footer {
-    width: 100%;
-  }
-}
